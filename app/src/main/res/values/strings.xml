@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CustomViewDemo</string>
+    <string name="sampleText">User Name</string>
+    <string name="formName">Login Form</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+</resources>

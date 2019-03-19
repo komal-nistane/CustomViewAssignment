@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomStyle"
+        android:text="@string/formName"
+        android:layout_above="@+id/rel1"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+        <EditText
+            android:imeOptions="actionNext"
+            android:id="@+id/custom_edit_text_username_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            style="@style/CustomStyle"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPersonName"
+            android:hint="@string/username"
+            />
+
+        <EditText
+            android:imeOptions="actionNext"
+            android:id="@+id/custom_edit_text_password_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            style="@style/CustomStyle"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:layout_below="@+id/custom_edit_text_username_view"
+            />
+
+        <com.example.customviewdemo.CustomView
+            android:id="@+id/custom_button_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Submit"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/custom_edit_text_password_view"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
